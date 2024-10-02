@@ -8,3 +8,8 @@ function add(x:number,y:number):number{
 }
 let sum=add(10,20);
 console.log(sum)
+function greeting(msg:string,name:string):string{
+    return name+" "+greeting;
+}
+let greetMsg=greeting("Good Afternoon","Manonmani");
+console.log(greetMsg);
