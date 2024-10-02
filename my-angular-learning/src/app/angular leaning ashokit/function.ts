@@ -21,3 +21,4 @@ function greet(msg:string,...names:string[])
 {
     console.log(msg+"  "+names.join(","))
 }
+greet("Good Afternoon ","Mano","naveen","chandar")

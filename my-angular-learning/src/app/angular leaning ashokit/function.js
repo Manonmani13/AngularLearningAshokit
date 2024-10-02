@@ -25,3 +25,4 @@ function greet(msg) {
     }
     console.log(msg + "  " + names.join(","));
 }
+greet("Good Afternoon ", "Mano", "naveen", "chandar");
