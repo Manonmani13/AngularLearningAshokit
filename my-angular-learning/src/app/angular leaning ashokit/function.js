@@ -13,3 +13,15 @@ function greeting(msg, name) {
 }
 var greetMsg = greeting("Good Afternoon", "Manonmani");
 console.log(greetMsg);
+function wish(name, msg) {
+    if (msg === void 0) { msg = "Hi"; }
+    return name + " " + msg;
+}
+console.log(wish("Ashok"));
+function greet(msg) {
+    var names = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        names[_i - 1] = arguments[_i];
+    }
+    console.log(msg + "  " + names.join(","));
+}

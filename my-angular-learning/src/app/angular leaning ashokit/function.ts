@@ -13,3 +13,11 @@ function greeting(msg:string,name:string):string{
 }
 let greetMsg=greeting("Good Afternoon","Manonmani");
 console.log(greetMsg);
+function wish(name:string,msg:string ="Hi"):string{
+    return name+" "+msg;
+}
+console.log(wish("Ashok"))
+function greet(msg:string,...names:string[])
+{
+    console.log(msg+"  "+names.join(","))
+}
