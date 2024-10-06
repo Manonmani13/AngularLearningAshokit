@@ -1,5 +1,15 @@
-<h1>
+<!-- <h1>
   Welcome To Angular Framework
 </h1>
 <app-greet></app-greet>
-<app-demo></app-demo>
+<app-demo></app-demo> -->
+<div>
+  <h4>Two-way Data Binding Example</h4>
+  Name: {{ fname }}<br/>
+  Age: {{ age }}
+  <hr>
+  Name: <input type="text" [(ngModel)]="fname"/><br/>
+  Age: <input type="text" [(ngModel)]="age"/><br/>
+  <input type="button" value="Submit" (click)="handleSubmitBtn()">
+</div>
+
