@@ -11,10 +11,16 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   username: string = ''; // Initialize username
   password: string = ''; // Initialize password
+  confirmPassword: string='';
+  gender: string='';
+  country:string='';
   msg: string = ''; // Initialize message
 
   checkLogin() {
     console.log('Logging in with', this.username, this.password);
     this.msg = 'Login attempted!'; // Example message
+  }
+  handleRegBtnClick(){
+    this.msg="Registration Successfully";
   }
 }
