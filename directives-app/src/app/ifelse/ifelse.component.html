@@ -1,0 +1,11 @@
+<div *ngIf="status; then template1 else template2"></div>
+
+<ng-template #template1>
+  <!-- Content for when status is true -->
+  <p>Status is true!</p>
+</ng-template>
+
+<ng-template #template2>
+  <!-- Content for when status is false -->
+  <p>Status is false!</p>
+</ng-template>
