@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { ClazzComponent } from './clazz/clazz.component'; // Adjust the path as necessary
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { StyleComponent } from './style/style.component'; // Adjust the path as necessary
+import { IfelseComponent } from './ifelse/ifelse.component'; // Adjust the path as necessary
+import { NgforComponent } from './ngfor/ngfor.component'; // Adjust the path as necessary
+import { RouterOutlet } from '@angular/router'; // If you're using routing
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ClazzComponent], // Add ClazzComponent here
+  imports: [RouterOutlet, ClazzComponent, StyleComponent, IfelseComponent, NgforComponent], // Include all components here
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
-
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'directives-app';
+}

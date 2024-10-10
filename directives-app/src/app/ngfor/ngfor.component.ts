@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-ngfor',
   standalone: true,
-  imports: [CommonModule], // Include CommonModule
+  imports: [CommonModule],
   templateUrl: './ngfor.component.html',
   styleUrls: ['./ngfor.component.css']
 })
