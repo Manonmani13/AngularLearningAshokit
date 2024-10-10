@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { ClazzComponent } from './clazz/clazz.component'; // Adjust the path as necessary
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [ClazzComponent], // Add ClazzComponent here
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppComponent {}

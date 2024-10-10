@@ -7,7 +7,7 @@ import { IfelseComponent } from './ifelse/ifelse.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, StyleComponent, ClazzComponent,IfelseComponent],
+  imports: [RouterOutlet, StyleComponent, ClazzComponent, IfelseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
