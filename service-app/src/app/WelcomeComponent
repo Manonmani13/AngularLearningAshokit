@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { WelcomeService } from './welcomeService';
+
+@Component({
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.css']
+})
+export class WelcomeComponent {
+  welcomeMsg: string;
+
+  constructor(private welcomeService: WelcomeService) { // Inject the service
+    this.welcomeMsg = this.welcomeService.getWelcomeMsg(); // Use the service
+  }
+}
