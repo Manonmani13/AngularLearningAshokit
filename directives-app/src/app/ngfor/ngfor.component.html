@@ -2,3 +2,24 @@
 <ul>
     <li *ngFor="let city of cities">{{ city }}</li>
 </ul>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>
+                EmployeeID
+            </th>
+            <th>
+                Employee Name
+            </th>
+            <th>
+                Employee Salary
+            </th>
+        </tr>
+        <tr *ngFor="let emp of emps">
+            <td>{{emp.empid}}</td>
+            <td>{{emp.empname}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </table>
+</div>
