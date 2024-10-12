@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { WelcomeService } from './welcomeService';
 
 @Component({
   selector: 'app-root',
-  standalone: true,  // Marking the component as standalone
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Your App Title';
-  welcomeMsg = 'Welcome to the Application!';
+  title = 'service-app';
+  welcomeMsg="";
+  constructor(@Inject(WelcomeService) private s:WelcomeService)
+  {
+
+  }
+  getMsg(){
+    this.welcomeMsg=this.s.getWelcomeMsg();
+  }
 }
