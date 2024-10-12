@@ -25,7 +25,7 @@ public class ProductController {
 	public String handleSaver(Product product,Model model)
 	{
 		System.out.println(product);
-		model.addAttribute(product);
+		model.addAttribute("msg","Product Saved Successfully");
 		return "dashboard";
 		
 	}

@@ -8,5 +8,6 @@
 </head>
 <body>
 <h2>${msg}</h2>
+<a href="loadForm">Go Back</a>
 </body>
 </html>
