@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: 57AIT
+app:
+  messages:
+    welcomeMsg: Good Morning...!
+    greetMsg: Welcome to Ashok IT.....!
