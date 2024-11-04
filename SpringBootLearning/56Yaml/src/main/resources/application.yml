@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: EmployeeUnitTesting
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: Manonmani@13
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
