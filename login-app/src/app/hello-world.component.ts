@@ -16,4 +16,9 @@ class HelloWorldComponent{
     {
         return Math.max(first,second);
     }
+    clickCount=0;
+    clickMe(){
+        this.clickCount++;
+        
+    }
 }
