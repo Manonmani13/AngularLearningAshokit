@@ -6,4 +6,14 @@ import { Component } from "@angular/core";
 })
 class HelloWorldComponent{
     title="Hello world";
+    color='Rose';
+    getTitle()
+    {
+        return this.title;
+    }
+
+    getMax(first:number,second:number)
+    {
+        return Math.max(first,second);
+    }
 }
