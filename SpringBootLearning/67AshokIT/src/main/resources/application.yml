@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 65AshokIT
+eureka: 
+	client:
+		register-with-eureka: false;
