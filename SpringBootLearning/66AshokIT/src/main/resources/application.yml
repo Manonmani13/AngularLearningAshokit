@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: 65AshokIT
+  datasource:
+    url: jdbc:h2:mem:testDB  # Correct format for H2 in-memory database
+    username: SA
+    password: null
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Or 'create' if you want to recreate schema on each startup
+    show-sql: true
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: '*'
+
+eureka:
+  client:
+    register-with-eureka: false
