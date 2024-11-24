@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: 79Ashokit
+
+  # Primary DataSource (for MySQL)
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb  # Corrected jdbc-url
+    username: root
+    password: Manonmani@13
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Correct driver class name for MySQL 8+
+    hikari:
+      maximum-pool-size: 10  # Adjust max pool size
+      minimum-idle: 5        # Adjust min idle connections
+
+  db2:
+    datasource:
+      url: jdbc:db2://localhost:50000/poc_db_two  # Change to your DB2 URL
+      username: db2user                            # Set the correct username for DB2
+      password: db2password                        # Set the correct password for DB2
+      driver-class-name: com.ibm.db2.jcc.DB2Driver  # DB2 driver class name
+      hikari:
+        maximum-pool-size: 10  # Adjust max pool size
+        minimum-idle: 5        # Adjust min idle connections
+
+csl:
+  properties:
+    trwWindowInSeconds: 10               # Time window for retry in seconds
+    trwMinNoOfCalls: 5                   # Minimum number of calls within the retry window
+    forErrTRWWindowInSeconds: 1800       # Error handling retry window in seconds
+    forErrTRWMinNoOfCalls: 3000          # Minimum number of calls for error retry
