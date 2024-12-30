@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+<script>
+if(typeof(Storage)!==undefined){
+    localStorage.setItem("lastname","Smith");
+    document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+}
+else{
+    document.getElementById("result").innerHTML="Sorry, your browser does not support Web Storage...";
+   
+}
+
+</script>
+</html>
