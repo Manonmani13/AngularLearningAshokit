@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mask1{
+        -webkit-mask-image: url(Free-Border-Floral-Ornament-Vector.jpg);
+        mask-image: url(Free-Border-Floral-Ornament-Vector.jpg);
+        mask-repeat: no-repeat;
+    }
+</style>
+<body>
+    <div class="mask1">
+        <img src="coffee.jpeg" width="600" height="400">
+
+    </div>
+    <h3>An SVG mask layer (formed as a star):</h3>
+    <svg width="600" height="400">
+      <mask id="svgmask2">
+        <polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 160,198"></polygon>
+      </mask>
+      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Free-Border-Floral-Ornament-Vector.jpg" mask="url(#svgmask2)"></image>
+    </svg>
+    
+</body>
+</html>
