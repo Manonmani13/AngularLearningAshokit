@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+document.getElementById("demo").innerHTML = newArr;
+const numbers = [45, 4, 9, 16, 25];
+
+const over18 = numbers.filter(myFunction);
+
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+document.getElementById("demo1").innerHTML = newArr;
+
+</script>
+</body>
+</html>

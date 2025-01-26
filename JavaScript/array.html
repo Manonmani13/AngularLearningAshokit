@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+</body>
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Lemon");
+
+    let size = fruits.length;
+    document.getElementById("demo").innerHTML=size;
+    fruits.shift();
+    document.getElementById("demo1").innerHTML=size;
+    fruits.unshift("Lemon");
+    document.getElementById("demo1").innerHTML=size;
+
+    const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo2").innerHTML = myChildren;
+document.getElementById("demo3").innerHTML = fruits.copyWithin(2,0);
+fruits.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo4").innerHTML = fruits;
+fruits.sort();
+document.getElementById("demo5").innerHTML = fruits;
+fruits.reverse();
+document.getElementById("demo6").innerHTML = fruits;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo6").innerHTML = numbers2;
+</script>
+</html>
