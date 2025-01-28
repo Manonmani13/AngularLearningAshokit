@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+fruits.delete("apples");
+document.getElementById("demo1").innerHTML = fruits.size;
+fruits.clear();
+document.getElementById("demo2").innerHTML = fruits.size;
+
+
+    </script>
+</body>
+</html>
