@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+function myFunction1(value, index, array) {
+  return value * 2;
+}
+const number1=numbers.map(myFunction1);
+document.getElementById("demo1").innerHTML = number1   ;
+const number2=numbers.flatMap(x=>x*10);
+document.getElementById("demo2").innerHTML=number2;
+let sum=numbers.reduceRight(reduceSample);
+function reduceSample(total,value,index,array){
+return total+value;
+}
+document.getElementById("demo3").innerHTML=sum;
+    </script>
+</body>
+</html>
