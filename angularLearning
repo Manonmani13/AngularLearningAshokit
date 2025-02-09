@@ -1,0 +1,17 @@
+ng new application name-used to create a new application
+ to open your code through terminal use this  -> code application name
+ to run your application  ->ng serve
+ 
+angular ->cache file 
+node_modules-> contain jar for angular
+gitignore-> ignore the files
+angular.json->for angular configuration it is using
+package.json->used to tell that project whole detail 
+package.lock.json->it will note that node module details like version.
+tsconfig.app.json->it uses to configure the tsconfig.json file
+tsconfig.json->used to compile the file
+tsconfig.spec.json->used for testing 
+app.module.ts-> this file controll every file 
+index.html -> which is first html file here only we can run our component
+main.ts-> which is used to call the every component here 
+
