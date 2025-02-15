@@ -15,3 +15,48 @@ app.module.ts-> this file controll every file
 index.html -> which is first html file here only we can run our component
 main.ts-> which is used to call the every component here 
 
+
+components
+which is sepearte the part 
+it contains html
+
+default component is APP
+after that only our component will available
+
+
+angular will perform very fast on dom changes
+
+
+How app component Works?
+it cotains html,css,ts file
+
+ts file contains only logics
+if you remove the selector in decorator content -> you cannot able to see output
+
+
+while giving the ng serve comment -> it will change all typescript file to javascript file
+
+what is WebPAck?
+inside the angular there is a tool called webPAck
+which help to run your app code ( it will include your typescript code)
+it will start the angular
+
+How to create Componet?
+
+two ways is there
+1.using cli
+2.manually
+
+export key help angular can make use of it.
+
+there is a two key for denotes the html content
+1.template - inside templat you must give every code
+2.templateURl- used to give url of that particular file
+
+
+styles-allow you to define inline css style
+styleURls- used for external urls
+
+once we registered our component then only our component will consider as componnent
+
+
