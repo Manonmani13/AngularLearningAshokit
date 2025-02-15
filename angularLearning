@@ -59,4 +59,11 @@ styleURls- used for external urls
 
 once we registered our component then only our component will consider as componnent
 
+using cli comments
+1.ng generate component hello-world (or) ng g c hello-world (project name)
+ 
+Data Binding
+there is two way 
+1.one way binding -only at the time of variable creation we can change <h1>{{firstName+' '+lastName}}</h1>  ,<h1 [innerText]="firstName='Mano'"></h1>
+2.two way binding-
 
