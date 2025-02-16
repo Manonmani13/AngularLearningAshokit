@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +8,9 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 })
 export class AppComponent {
   title = 'hello-world';
+  isDisabled :boolean=false;
+
+  getTitle(){
+    return this.title;
+  }
 }
