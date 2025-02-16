@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule for two-way
 
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';  // Ensure correct import path
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent  // Declare HelloWorldComponent
+    HelloWorldComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
