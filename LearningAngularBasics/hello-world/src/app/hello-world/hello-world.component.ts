@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   name: string = 'Manonmani';  // Initialize 'name' with a default value
+  value='';
+  value1='';
+
+  handleInput(event:any){
+    // this.value=event.target.value;
+
+    this.value=(event.target as HTMLInputElement).value;
+    }
+    title='List of movies';
+    movies: string[] = ['Movie 1', 'Movie 2', 'Movie 3'];  // Example array of movies
+
 }

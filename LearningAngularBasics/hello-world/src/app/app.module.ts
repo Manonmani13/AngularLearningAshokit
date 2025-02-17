@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule for two-way
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';  // Ensure correct import path
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HelloWorldModule } from './hello-world/HelloWorldModule';
+// import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   ],
   imports: [
     BrowserModule,
-    FormsModule  // Ensure FormsModule is imported to use ngModel
+    FormsModule,
+    HelloWorldModule  // Ensure FormsModule is imported to use ngModel
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Add this line for Web Components (optional)
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Add this line for Web Components (optional)
   providers: [],
   bootstrap: [AppComponent]
 })

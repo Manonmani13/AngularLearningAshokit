@@ -1,7 +1,12 @@
 <!-- app.component.html -->
 <h1>App Component Works!</h1>
-
+<app-hello-world></app-hello-world>
 <!-- Embedding UserProfileComponent -->
 <!-- <app-user-profile></app-user-profile> -->
-<h2>User Profile</h2>
-<button [disabled]="isDisabled">Click me!</button>
+<!-- <button [disabled]="isDisabled">Click me!</button> -->
+<button [attr.disabled]="isDisabled">Click Me!</button>
+<p [innerHTML]="'Welcome to'+'Angular'"></p>
+<p>You have clicked {{clickCount}}</p>
+<p>You have clicked {{clickCount1}}</p>
+
+<button (click)="clickMe(); clickCount1=clickCount">Click ME!</button>
