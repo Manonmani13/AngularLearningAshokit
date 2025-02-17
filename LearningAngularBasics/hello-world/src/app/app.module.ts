@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';  // Ensure correct import path
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HelloWorldModule } from './hello-world/HelloWorldModule';
+import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
-    UserProfileComponent  // Make sure it's declared here
+    UserProfileComponent ,
+    NgforExampleComponent // Ensure FormsModule is imported to use ngModel
+    // Make sure it's declared here
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HelloWorldModule  // Ensure FormsModule is imported to use ngModel
+    HelloWorldModule ,
   ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Add this line for Web Components (optional)
   providers: [],

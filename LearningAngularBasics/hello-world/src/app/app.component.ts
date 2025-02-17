@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { HelloWorldComponent } from "./hello-world/hello-world.component";
+import { NgforExampleComponent } from "./ngfor-example/ngfor-example.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HelloWorldComponent],
+  imports: [HelloWorldComponent, NgforExampleComponent],
   // imports: [HelloWorldComponent]
 })
 export class AppComponent {
@@ -22,4 +23,6 @@ export class AppComponent {
   clickMe(){
     this.clickCount++;
   }
+
+ 
 }

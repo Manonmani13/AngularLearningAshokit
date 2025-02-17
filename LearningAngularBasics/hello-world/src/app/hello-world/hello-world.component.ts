@@ -15,7 +15,7 @@ export class HelloWorldComponent {
 
     this.value=(event.target as HTMLInputElement).value;
     }
-    title='List of movies';
-    movies: string[] = ['Movie 1', 'Movie 2', 'Movie 3'];  // Example array of movies
+    // title='List of movies';
+    // moviesList: string[] = ['Movie 1', 'Movie 2', 'Movie 3'];  // Example array of movies
 
 }
