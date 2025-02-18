@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { HelloWorldComponent } from "./hello-world/hello-world.component";
 import { NgforExampleComponent } from "./ngfor-example/ngfor-example.component";
+import { TableExampleComponent } from "./table-example/table-example.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HelloWorldComponent, NgforExampleComponent],
+  imports: [HelloWorldComponent,
+    //  NgforExampleComponent, 
+     TableExampleComponent],
   // imports: [HelloWorldComponent]
 })
 export class AppComponent {

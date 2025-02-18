@@ -7,6 +7,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';  // E
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HelloWorldModule } from './hello-world/HelloWorldModule';
 import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
+import { TableExampleComponent } from './table-example/table-example.component';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
     AppComponent,
     HelloWorldComponent,
     UserProfileComponent ,
-    NgforExampleComponent // Ensure FormsModule is imported to use ngModel
+    NgforExampleComponent,
+    TableExampleComponent// Ensure FormsModule is imported to use ngModel
     // Make sure it's declared here
   ],
   imports: [
