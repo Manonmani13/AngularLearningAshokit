@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { NgClass, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-table-example',
-  imports: [NgFor],
+  imports: [NgFor,NgClass],
   templateUrl: './table-example.component.html',
   styleUrl: './table-example.component.css'
 })
@@ -12,7 +12,9 @@ export class TableExampleComponent {
   movies=[
     {title:'Zootopia',director:'Byron'},
     {title:'Zootopia',director:'Byron'},
+    {title:'Zootopia',director:'Byron'},
     {title:'Zootopia',director:'Byron'}
+
   ] 
 
 
