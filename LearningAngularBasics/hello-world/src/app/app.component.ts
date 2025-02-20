@@ -3,6 +3,7 @@ import { HelloWorldComponent } from "./hello-world/hello-world.component";
 import { NgforExampleComponent } from "./ngfor-example/ngfor-example.component";
 import { TableExampleComponent } from "./table-example/table-example.component";
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
+import { NgIfExampleComponent } from "./ng-if-example/ng-if-example.component";
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,8 @@ import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.
   imports: [HelloWorldComponent,
     //  NgforExampleComponent, 
     //  TableExampleComponent,
-     NgSwitchExampleComponent
-    ],
+    // NgSwitchExampleComponent, 
+    NgIfExampleComponent],
 })
 export class AppComponent {
   title = 'hello-world';

@@ -9,6 +9,8 @@ import { HelloWorldModule } from './hello-world/HelloWorldModule';
 import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
 import { TableExampleComponent } from './table-example/table-example.component';
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
+import { CommonModule } from '@angular/common';
+import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -18,13 +20,14 @@ import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.
     UserProfileComponent ,
     NgforExampleComponent,
     TableExampleComponent,
-    NgSwitchExampleComponent// Ensure FormsModule is imported to use ngModel
+    NgSwitchExampleComponent,
+    NgIfExampleComponent
     // Make sure it's declared here
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HelloWorldModule ,
+    // CommonModule
   ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Add this line for Web Components (optional)
   providers: [],

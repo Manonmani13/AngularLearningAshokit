@@ -1,0 +1,6 @@
+<h1>ng If Example</h1>
+<p *ngIF="true">Can you see me?</p>
+<div class="row">
+    <input type="checkbox" ([ngModal])="showMe">
+</div>
+<p *ngIf="showMe">showme is checked</p>
