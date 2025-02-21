@@ -11,6 +11,7 @@ import { TableExampleComponent } from './table-example/table-example.component';
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
 import { CommonModule } from '@angular/common';
 import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
+import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
     NgforExampleComponent,
     TableExampleComponent,
     NgSwitchExampleComponent,
-    NgIfExampleComponent
+    // NgIfExampleComponent
+    NgClassExampleComponent
     // Make sure it's declared here
   ],
   imports: [

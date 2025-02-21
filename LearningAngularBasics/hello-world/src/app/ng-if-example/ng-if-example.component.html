@@ -4,3 +4,12 @@
     <input type="checkbox" ([ngModal])="showMe">
 </div>
 <p *ngIf="showMe">showme is checked</p>
+<div  *ngIf="showMe; then thenBlock else elseBlock">
+
+</div>
+<ng-template #thenBlock>
+    <p>showme is checked</p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>showme is unchecked</p>
+</ng-template>

@@ -3,7 +3,7 @@ import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-ng-if-example',
-  imports: [NgModel],
+  // imports: [NgModel],
   templateUrl: './ng-if-example.component.html',
   styleUrl: './ng-if-example.component.css'
 })

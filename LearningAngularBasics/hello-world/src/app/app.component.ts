@@ -4,6 +4,7 @@ import { NgforExampleComponent } from "./ngfor-example/ngfor-example.component";
 import { TableExampleComponent } from "./table-example/table-example.component";
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
 import { NgIfExampleComponent } from "./ng-if-example/ng-if-example.component";
+import { NgClassExampleComponent } from "./ng-class-example/ng-class-example.component";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { NgIfExampleComponent } from "./ng-if-example/ng-if-example.component";
     //  NgforExampleComponent, 
     //  TableExampleComponent,
     // NgSwitchExampleComponent, 
-    NgIfExampleComponent],
+    // NgIfExampleComponent, 
+    NgClassExampleComponent],
 })
 export class AppComponent {
   title = 'hello-world';
