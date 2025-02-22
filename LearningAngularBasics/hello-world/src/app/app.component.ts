@@ -5,6 +5,7 @@ import { TableExampleComponent } from "./table-example/table-example.component";
 import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
 import { NgIfExampleComponent } from "./ng-if-example/ng-if-example.component";
 import { NgClassExampleComponent } from "./ng-class-example/ng-class-example.component";
+import { NgStyleExampleComponent } from "./ng-style-example/ng-style-example.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { NgClassExampleComponent } from "./ng-class-example/ng-class-example.com
     //  TableExampleComponent,
     // NgSwitchExampleComponent, 
     // NgIfExampleComponent, 
-    NgClassExampleComponent],
+    // NgClassExampleComponent, NgStyleExampleComponent,
+  NgStyleExampleComponent],
 })
 export class AppComponent {
   title = 'hello-world';
