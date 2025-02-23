@@ -6,6 +6,8 @@ import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.
 import { NgIfExampleComponent } from "./ng-if-example/ng-if-example.component";
 import { NgClassExampleComponent } from "./ng-class-example/ng-class-example.component";
 import { NgStyleExampleComponent } from "./ng-style-example/ng-style-example.component";
+import { DatePipeExampleComponent } from "./date-pipe-example/date-pipe-example.component";
+import { SharinDataExampleComponent } from "./sharin-data-example/sharin-data-example.component";
 
 @Component({
   selector: 'app-root',
@@ -17,7 +19,10 @@ import { NgStyleExampleComponent } from "./ng-style-example/ng-style-example.com
     // NgSwitchExampleComponent, 
     // NgIfExampleComponent, 
     // NgClassExampleComponent, NgStyleExampleComponent,
-  NgStyleExampleComponent],
+    // NgStyleExampleComponent, DatePipeExampleComponent
+    // DatePipeExampleComponent, SharinDataExampleComponent
+    SharinDataExampleComponent
+  ],
 })
 export class AppComponent {
   title = 'hello-world';
