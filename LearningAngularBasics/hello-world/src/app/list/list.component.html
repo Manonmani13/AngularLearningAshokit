@@ -1,6 +1,7 @@
+<app-sharin-data-example (carAdded)="carDataUpdated($event)"></app-sharin-data-example>
 <h5>List Component</h5>
 <div *ngIf="cars.length>0;then carList; else noData"></div>
-<ng-template>
+<ng-template #carList>
     <ul>
         <li *ngFor="let carName of cars">{{carName}}</li>
     </ul>
