@@ -8,6 +8,8 @@ import { NgClassExampleComponent } from "./ng-class-example/ng-class-example.com
 import { NgStyleExampleComponent } from "./ng-style-example/ng-style-example.component";
 import { DatePipeExampleComponent } from "./date-pipe-example/date-pipe-example.component";
 import { SharinDataExampleComponent } from "./sharin-data-example/sharin-data-example.component";
+import { HeadingComponent } from "./heading/heading.component";
+import { TemplateDrivenFormComponent } from "./template-driven-form/template-driven-form.component";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,7 @@ import { SharinDataExampleComponent } from "./sharin-data-example/sharin-data-ex
     // NgClassExampleComponent, NgStyleExampleComponent,
     // NgStyleExampleComponent, DatePipeExampleComponent
     // DatePipeExampleComponent, SharinDataExampleComponent
-    SharinDataExampleComponent
+    // SharinDataExampleComponent, HeadingComponent, TemplateDrivenFormComponent
   ],
 })
 export class AppComponent {

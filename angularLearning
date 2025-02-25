@@ -64,6 +64,35 @@ using cli comments
  
 Data Binding
 there is two way 
+
+
 1.one way binding -only at the time of variable creation we can change <h1>{{firstName+' '+lastName}}</h1>  ,<h1 [innerText]="firstName='Mano'"></h1>
 2.two way binding-
+
+property Binding
+-------------------
+<h1 [innerText]="title"></h1>
+<button [disabled]='isDisabled'>Click me !</button>
+
+which is used to access our html element property
+
+example : innerText
+
+Directives
+------------
+changes behavior ,apperance or layout of the elements'
+
+pipes
+------
+if we want to change the original data to another format 
+components are directives too
+Strcutural Directive-ngFor
+
+ng on changes
+------------------
+it is not work for arrays,object for that we have to use ngDoCheck
+
+ngDoCheck
+--------
+it will call everytime whenevery you use keyboard and use
 

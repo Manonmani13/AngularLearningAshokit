@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { NgModel } from '@angular/forms';
 
 @Component({
@@ -7,13 +7,16 @@ import { NgModel } from '@angular/forms';
   templateUrl: './heading.component.html',
   styleUrl: './heading.component.css'
 })
-export class HeadingComponent implements OnChanges ,OnInit{
+export class HeadingComponent implements OnChanges ,OnInit,OnDestroy{
   @Input()
   text='';
   ngOnChanges(changes: SimpleChanges): void {
       console.log(changes['text'])
   }
   ngOnInit(): void {
-      console.log("Hell")
+      console.log("Hello")
+  }
+  ngOnDestroy(): void {
+      console.log("ngOnDestroy called!")
   }
 }
