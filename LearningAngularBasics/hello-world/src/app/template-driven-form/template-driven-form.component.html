@@ -12,7 +12,7 @@
     <form action="/submit" method="post">
         <!-- Name input -->
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required [(ngModal)]="contact.firstName"><br><br>
 
         <!-- Email input -->
         <label for="email">Email Address:</label><br>
@@ -28,16 +28,18 @@
         <!-- Select dropdown -->
         <label for="country">Select Country:</label><br>
         <select id="country" name="country" required>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="canada">Canada</option>
-            <option value="australia">Australia</option>
+            <option value="">Select</option>
+            <option [ngValue]="country.id" *ngFor="let country of countryList">{{country.name}}</option>
+        
         </select><br><br>
 
         <!-- Message textarea -->
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message" required></textarea><br><br>
 
+        <div ngModalGroup="message">
+
+        </div>
         <!-- Submit button -->
         <input type="submit" value="Submit">
     </form>
