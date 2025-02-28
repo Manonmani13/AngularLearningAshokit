@@ -10,12 +10,14 @@ import { DatePipeExampleComponent } from "./date-pipe-example/date-pipe-example.
 import { SharinDataExampleComponent } from "./sharin-data-example/sharin-data-example.component";
 import { HeadingComponent } from "./heading/heading.component";
 import { TemplateDrivenFormComponent } from "./template-driven-form/template-driven-form.component";
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HelloWorldComponent,
+  imports: [
+    // HelloWorldComponent,
     //  NgforExampleComponent, 
     //  TableExampleComponent,
     // NgSwitchExampleComponent, 
@@ -24,6 +26,7 @@ import { TemplateDrivenFormComponent } from "./template-driven-form/template-dri
     // NgStyleExampleComponent, DatePipeExampleComponent
     // DatePipeExampleComponent, SharinDataExampleComponent
     // SharinDataExampleComponent, HeadingComponent, TemplateDrivenFormComponent
+    ReactiveFormComponent
   ],
 })
 export class AppComponent {
