@@ -11,6 +11,7 @@ import { SharinDataExampleComponent } from "./sharin-data-example/sharin-data-ex
 import { HeadingComponent } from "./heading/heading.component";
 import { TemplateDrivenFormComponent } from "./template-driven-form/template-driven-form.component";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { UserListComponent } from "./user-list/user-list.component";
 
 @Component({
   selector: 'app-root',
@@ -26,8 +27,9 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     // NgStyleExampleComponent, DatePipeExampleComponent
     // DatePipeExampleComponent, SharinDataExampleComponent
     // SharinDataExampleComponent, HeadingComponent, TemplateDrivenFormComponent
-    ReactiveFormComponent
-  ],
+    // ReactiveFormComponent,
+    UserListComponent
+],
 })
 export class AppComponent {
   title = 'hello-world';

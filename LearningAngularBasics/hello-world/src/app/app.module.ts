@@ -17,6 +17,7 @@ import { DatePipeExampleComponent } from './date-pipe-example/date-pipe-example.
 import { SharinDataExampleComponent } from './sharin-data-example/sharin-data-example.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { HttpClientModule } from '@angular/common/http';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     // SharinDataExampleComponent
     // TemplateDrivenFormComponent
     // Make sure it's declared here
-    ReactiveFormComponent
+    // ReactiveFormComponent
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
