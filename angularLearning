@@ -96,3 +96,38 @@ ngDoCheck
 --------
 it will call everytime whenevery you use keyboard and use
 
+COMPONENT
+--------------
+component is typescript class which is responsible to handle requests coming from template.
+TEMPLATE:
+----------
+template is a html file which contains presentation logic
+
+DATABINDING
+--------------
+data binding is used to bind the data between component and template.component properties will be binded to html elements.
+
+Service:
+---------
+service is typescript class which contains re-usable business logic.
+
+DEPENDENCY INJECTION
+-----------------------
+dependency injection is used for injecting service class obj into component class obj.
+
+META DATA
+-----------
+data about the data is called as Meta data.relation between component and template will be maintained in meta data.
+
+DIRECTIVES
+------------
+directives are used to mainpulate DOM elements.
+
+PIPES
+------
+pipes are used to transform the data before displaying in template.
+
+collection of component is called as Module
+
+routings are used to navigate from one page to another page.
+
