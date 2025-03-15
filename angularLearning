@@ -131,3 +131,34 @@ collection of component is called as Module
 
 routings are used to navigate from one page to another page.
 
+To create angular application execute below command in command prompt 
+ng new <app-name>
+
+once application got created , nagivate into application folder and execute below command to run angular application.
+ng serve
+
+
+Package.json
+->represents the configuration settings/meta data of the application
+->angular application dependencies will be configure in package.json file
+->in package.json file we will have 'dependencies' and 'dev-dependices'
+->'dev-dependices' are used for developing angular application and dependices are used for running angular application.
+
+tsconfig.json file
+->tsconfig.json file is used to set configuration settings for typescript compiler.
+->typescript complier will read tsconfig.file json and then it compile all ts.file into .js file.
+
+tslint.json
+->this file contains configuration settings for 'lint' tool which is used to verify weather the typescript files are following a set of coding standard or not.
+
+karma.conf.js
+->this file contains configuration settings for 'karma' tool which is used to execute unit testcases on multiple browsers.
+
+angular.json
+->this file contains configuration settings for "@angular/cli" tool which is used for create,complie and run angular applications.
+-> it contains settings such as home page(index.html) .startup file (main.ts),css file (Style.css) etc.
+
+index.html
+->this file is home page(startup page) for entire application.
+->the content of entire  application will be displayed in index.html  file only.
+
