@@ -162,3 +162,21 @@ index.html
 ->this file is home page(startup page) for entire application.
 ->the content of entire  application will be displayed in index.html  file only.
 
+Start up Module in angular
+
+->Angular application can contain any no.of modules
+->Angular application execution will begin from 'App Module'.
+->'App Module' is called as 'StartUp Module' of angular application.
+-> the process of executing startup module is called as 'Boot Strapping'.
+	synatx:platformBrowserDynamic().bootstrapModule(AppModule);
+	
+Angular Application Execution Flow
+-----------------------------------
+->Angular application execution will start from "App Module". it is also called as Bootstraping Module in Angular.
+->"App Module" will boot strap  "App Component"
+->To access a component we will use component selector.we can find component selector tag in component.ts file
+->In Angular application "src/index.html" file will act as welcome file.
+->In src/index.html file we will write 'App Component' selector so when index.html file is loaded it will access 'App Componen'
+->Component represents certain section in web page.
+->for example:'login form' will be represeneted by "Login Component" ."Registered Form" Will be represented by "Registered Component"
+
