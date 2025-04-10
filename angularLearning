@@ -177,6 +177,159 @@ Angular Application Execution Flow
 ->To access a component we will use component selector.we can find component selector tag in component.ts file
 ->In Angular application "src/index.html" file will act as welcome file.
 ->In src/index.html file we will write 'App Component' selector so when index.html file is loaded it will access 'App Componen'
-->Component represents certain section in web page.
+Q)what is componnet?
+Ans)Component represents certain section in web page.
 ->for example:'login form' will be represeneted by "Login Component" ."Registered Form" Will be represented by "Registered Component"
+
+Q)How to create Component in angular application?
+Ans)To create a new component we will use below syntax in angular cli.
+	ng generate component <component-name>
+	or
+	ng g c <component-name>
+	
+	Ex:ng g c login===>Login component will be created
+	
+Q)What all files will be created in component?
+	login.component.ts->(properties & method)
+	login.component.html->(presentation)
+	login.component.spec.ts->unit testing
+	login.component.css->styles
+
+-><Component-name>.component.ts file is a typescript class in that we will write variables and methods to deal with requests.	
+properties   ->  to store the data
+methods      ->  to perform action
+
+Note: In angular application we can create any no.of components. "app component" is the mandtory component.
+
+@)How to invoke a component in web-page?
+Ans) A Component can be invoked using  'selector' tag.We can find selector tag in component.ts file.
+
+@)How to represent type script class as component?
+Ans)To represent  Type Script class as component we will use @Component decorator.
+
+
+->selector represents a tag which is used to invoke the component.
+->'templateURl' represents html file that has to be rerendered when the component is invoked.
+->'styleUrls' represents css style that should be loaded for template.
+
+Data Binding
+-----------
+->Data Binding is a technique which is used to establish relation between "component" and "template".
+->component is a typescript class
+->template is html class
+->by using data binding technique we can send data from component class to template file and vice versa
+->if component is changed then template will be automatically. if template is changed then the component will be changed automatically 
+->Data Bindings are four types.
+	1)Interpolation
+	2)Property Binding
+	3)Event Binding
+	4)Two Binding
+	
+Interpolation
+--------------
+->it is used to display variable/property value in template
+->if variable/property value is changed then immediately it will be updated in the template
+
+	Syntax:{{msg}}
+
+Property Binding
+----------------
+->property binding is used to send the data from component to template and assign the same into an attribute of tag.
+->if the property is changed then immediately it will be updated in template.
+Syntax:[attribute]=*property
+
+Event Binding
+-------------
+->it is used to pass event notification from template to comoponent
+syntax:<tag (event)="method()"></tag>
+
+Two-way data binding
+--------------------
+->it is combination of both property binding and event binding 
+->to achieve two way data binding we have ngModal directives.
+->two way data binding is applicable only for <input> and <select> tags;
+->to use two-way data binding we must import "Form Modules"
+
+--------------------
+Import 	 "Form Modules" in app.module.ts file
+Declare properties and methods in app.component.ts file
+With prensentation Logic in app.component.html file
+------------------
+
+Directives
+------------
+->Directives are used to manipulate DOM  elements.
+->Dom stands for Document Object Modal
+->Angular Framework provided several predefined directives
+----------------------------------------------------------
+style
+ngClass
+ngIf
+ngIF and else
+ngSwitch
+ngFor
+
+->style directives is used to set Css property value dynamically at runtime.when the value of the component property is changed the value of css property will be changed automatically.
+->'ngClass' directives is used to set css classname dynamically at runtime.this directives is used to set styles with multiple properties conditional at runtime.
+->'ngIf' is used to display an element when condition is true.
+->'ngIf and else; is used to display one element when condition 'true; and display anothher element when condition is false.
+
+ngfor
+----
+->it is used to repeat the tag once for each element in the array.
+->we have to prefix '*' before ngFor directives
+EX:arrayNAme=[val1,val2,val3]
+	<tag *ngFor="let variable of arrayname">
+	</tag>
+------------------
+->service is a class which contains re-usable business logic.
+->multiple component classes can access service which contains bussiness logic.
+
+What is web application
+------------------------
+the applications which are running in the internet are called as web application
+Ex:Gmail,flipkart,amazon,naukri,linkedin etc..
+web applications are meant for Customer 2 Business communcation
+(c2b communication
+web application we can divided into 2 types.
+1.single page application (SPA)
+2.multiplepage application (MPA)
+
+->in spa, web page will be reloaded only for first request,from second request onwards only content will be loaded 
+EX:www.angular.io
+->in mPA for every request web page will be loaded at client side(it increases burden on browser and server)
+
+Note:Single page application will have rich user experience.
+
+EX:www.axisbank.com
+What is angular
+---------------
+angular is client side framework.
+angular is used to develop frontend part of application
+	Note::Backend can be ava/.net/python/php/node.js
+angular is mainely used to develop single page application
+angular is free and open source framework
+angular developed by google company
+angular support multiple platforms
+angular  having browser compatability
+angular applications will have both web and mobile compatability.
+->we will decoreate service class with @Injectable annotation so that other classes can access service class using @Inject annotation.
+angular framework devloped by using typescript
+angular framework came into market in the year of 2016.
+the current version of angular is 13.
+
+----------------------------------
+Angular JS VS Angular FrameWork
+--------------------------------
+angular js and angular framework  both are not same
+angular js developed by google in 2010.
+agular js developed by using java script.
+angular js 1.0 angular 1.6 ...stopped
+angular js having lot of performance issues
+
+Note:google identified drawbacks of angular js and they have re-written angular js compatablity using typescript and released into market in 2016 with same as angular 2.
+
+Note:from angular 2 ...angular 13 (Developed using typescript)
+
+Note:Angular & angular framework both are same
 
